@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<head>
+    <title>Restaurant Recommendation System</title>
+</head>
+<html>
+   <body>
+     <main>
+          <div class="px-4 py-3 my-2 text-center">
+            <h1 class="display-6 fw-bold text-primary">Welcome to the Restaurant Recommendation System</h1>            
+          </div>
+        <form method="post" action="{{url_for('googlemap')}}">
+            <div class="col-md-6 mx-auto text-center">
+                <label for="location" class="form-label fw-bold fs-5">Could you please tell me your location?</label>
+                
+                <div class="d-grid gap-2 d-sm-flex justify-content-sm-center align-items-center my-1">
+                    <input type="text" class="form-control" id="location" name="location" style="max-width: 256px;">
+                  </div>            
+                <div class="d-grid gap-2 d-sm-flex justify-content-sm-center my-2">
+                  <button type="submit" class="btn btn-primary btn-lg px-4 gap-3">Check nearby!</button>
+                </div>            
+            </div>
+        </form>
+     </main>      
+   </body>
+</html>
